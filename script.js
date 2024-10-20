@@ -23,8 +23,26 @@ document.addEventListener("keydown",event =>{
 
 } );
 var block = document.getElementById("block");
+var counter = 0;
 block.addEventListener('animationiteration',()=>{
 var random = Math.floor(Math.random()*3);
 left = random * 100;
-block.style.left = left + "px"
+block.style.left = left + "px";
+counter ++;
 })
+setInterval(function(){
+    var characterLeft = parseInt(window.getComputedStyle(character)
+.getPropertyValue("left"));
+var blockLleft = parseInt(window.getComputedStyle(block)
+.getPropertyValue("left"));
+var blockTop = parseInt(window.getComputedStyle(block)
+.getPropertyValue("top"));
+if (characterLeft === blockLleft && blockTop<500 
+    && blockTop>300
+) {
+    alert("Game Over. Score :"+counter);
+    block.style.display = "none";
+    block.style.animation = "none";
+
+}
+},1)
