@@ -15,17 +15,17 @@ button{
     box-sizing: border-box;
 }
 #character{
-    width: 100px;
+    width: 90px;
     height: 100px;
-    background-color: red;
+    background-color: #fff;
     position: relative;
     top: 300px;
     left: 100px;
 }
 #block{
-    width: 100px;
+    width: 90px;
     height: 100px;
-    background-color: black;
+    background-color: #fff;
     position: relative;
     top: 500px;
     animation: slide 1s infinite linear;
@@ -50,4 +50,7 @@ button{
     height: 20px;
     font-family: Arial, Helvetica, sans-serif;
 
+}
+img{
+    width: 90px;
 }
