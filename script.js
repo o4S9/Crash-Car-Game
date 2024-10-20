@@ -1,4 +1,5 @@
 let character = document.getElementById("character");
+let score = document.getElementById("score");
 function moveLeft(){
     let left = 
     parseInt(window.getComputedStyle(character)
@@ -37,12 +38,15 @@ var blockLleft = parseInt(window.getComputedStyle(block)
 .getPropertyValue("left"));
 var blockTop = parseInt(window.getComputedStyle(block)
 .getPropertyValue("top"));
+score.innerText = "Score :"+counter;
 if (characterLeft === blockLleft && blockTop<500 
     && blockTop>300
 ) {
     alert("Game Over. Score :"+counter);
     block.style.display = "none";
     block.style.animation = "none";
+    score.style.fontSize ="7rem";
+
 
 }
-},1)
+},1);
