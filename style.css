@@ -15,7 +15,7 @@ button{
     box-sizing: border-box;
 }
 #character{
-    width: 90px;
+    width: 80px;
     height: 100px;
     background-color: #fff;
     position: relative;
@@ -23,7 +23,7 @@ button{
     left: 100px;
 }
 #block{
-    width: 90px;
+    width: 80px;
     height: 100px;
     background-color: #fff;
     position: relative;
@@ -52,5 +52,5 @@ button{
 
 }
 img{
-    width: 90px;
+    width: 80px;
 }
